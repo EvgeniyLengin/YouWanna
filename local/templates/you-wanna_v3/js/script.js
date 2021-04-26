@@ -158,7 +158,7 @@ $(document).on('keydown keyup', '.code_inner .form-control', function(e){
     let responsBasket = $(response).find('.top__menu.col.col-4').html();
     $('.top__menu.col.col-4').html(responsBasket);
 
-    $('#js-fast-ordering-form .modal-body').load('/ajax/fast_ordering_form.php?LANGUAGE_ID=' + LANGUAGE_ID, function () {
+    $('#js-fast-ordering-form .modal-body').load('/ajax/fast_ordering_form.php?LANGUAGE_ID=' +"ru", function () {
         /*console.log($(this));*/
         var $popupId = '#js-fast-ordering-form';
         var $popup = $($popupId);
@@ -279,7 +279,7 @@ $(document).on('touchstart', '#bx_basketFKauiI .bx-basket-item-list-button-conta
                     /*location.reload(true);*/
                     if (window.service !== 1) {
                         if (json.sms_pass === true){
-                            var callbackRequestURL = '/personal/change_passwd.php?lang=' + LANGUAGE_ID;
+                            var callbackRequestURL = '/personal/change_passwd.php?lang=' +"ru";
                             $('#callback-modal .callback-modal-body').load(callbackRequestURL, function () {
                                 /*$('#callback-modal').addClass('open');*/
                             });
@@ -302,7 +302,7 @@ $(document).on('touchstart', '#bx_basketFKauiI .bx-basket-item-list-button-conta
 
     /* Обработка отправки формы восстановления пароля */
     if ($("#form-review").length) {
-        $("#form-review").load('/ajax/formReview.php?lang=' + LANGUAGE_ID, function () {
+        $("#form-review").load('/ajax/formReview.php?lang=' +"ru", function () {
 
             $("input[name='PHONE']").mask("+7 (999) 999-99-99");
 
@@ -321,7 +321,7 @@ $(document).on('touchstart', '#bx_basketFKauiI .bx-basket-item-list-button-conta
 
                 var inputErrMsg = '';
                 var emailErr = '';
-                if (LANGUAGE_ID === 'ru') {
+                if (LANGUAGE_ID = 'ru') {
                     inputErrMsg = "Заполните это поле.";
                     emailErr = "Почта введена некорректно.";
                 } else {
@@ -1773,7 +1773,7 @@ $(document).ready(function () {
         if ($(this).children('span.js-link-cart-quantity').text() === '0') {
 
         } else {
-            $('#js-popup-cart-block .js-content-basket').load('/ajax/get_basket.php?lang=' + LANGUAGE_ID, function () {
+            $('#js-popup-cart-block .js-content-basket').load('/ajax/get_basket.php?lang=' +"ru", function () {
                 $('#js-popup-cart-block').addClass('open');
                 updateUlSkuListText();
             });
@@ -1793,7 +1793,7 @@ $(document).ready(function () {
     /* Скрипт для всплывашки заказа обратного звонка */
     $('.callback-modal-button').click(function (e) {
         e.preventDefault();
-        var callbackRequestURL = '/ajax/callback_form.php?lang=' + LANGUAGE_ID;
+        var callbackRequestURL = '/ajax/callback_form.php?lang=' +"ru";
         $('#callback-modal .callback-modal-body').load(callbackRequestURL, function () {
             $('#callback-modal').addClass('open');
         });
@@ -1814,12 +1814,12 @@ $(document).ready(function () {
     $('.list__link.profile').click(function (e) {
         if (!$(this).data('user-auth')) {
             e.preventDefault();
-            var callbackRequestURL = '/personal/auth1.php?lang=' + LANGUAGE_ID;
+            var callbackRequestURL = '/personal/auth1.php?lang=' +"ru";
             $('#callback-modal .callback-modal-body').load(callbackRequestURL, function () {
                 $('#callback-modal').addClass('open');
                 $('.register-link-button').click(function (e) {
                     e.preventDefault();
-                    var callbackRequestURL = '/personal/register.php?lang=' + LANGUAGE_ID;
+                    var callbackRequestURL = '/personal/register.php?lang=' +"ru";
                     $('#callback-modal .callback-modal-body').load(callbackRequestURL, function () {
                         /*$('#callback-modal').addClass('open');*/
                     });
@@ -1835,7 +1835,7 @@ $(document).ready(function () {
 
         /*console.log('click');*/
 
-        $('#video-popup .modal-body').load('/ajax/video_modal.php?img=' + $(this).data('img') + '&src=' + $(this).data('src') + '&LANGUAGE_ID=' + LANGUAGE_ID, function () {
+        $('#video-popup .modal-body').load('/ajax/video_modal.php?img=' + $(this).data('img') + '&src=' + $(this).data('src') + '&LANGUAGE_ID=' +"ru", function () {
             var $popupId = '#video-popup';
             var $popup = $($popupId);
             $popup.find('.modal-body').append($(this));
@@ -1872,7 +1872,7 @@ $(document).ready(function () {
     /* Скрипт для всплывашки отклика на вакансию */
     $('.vacancy-respond-button').click(function (e) {
         e.preventDefault();
-        var requestURL = '/ajax/respond_vacancy_form.php?lang=' + LANGUAGE_ID
+        var requestURL = '/ajax/respond_vacancy_form.php?lang=' +"ru"
             + '&id=' + $(this).data('id')
             + '&vacancy_name=' + $(this).data('vacancy_name');
         $('#callback-modal .callback-modal-body').load(requestURL, function () {
@@ -2040,7 +2040,7 @@ $(document).ready(function () {
                     {
                         q: q,
                         ajax_search: 'Y',
-                        lang: LANGUAGE_ID
+                        lang: "ru"
                     },
                     function (data) {
                         $('#js-header-search-result').html(data).slideDown('slow');
@@ -2375,7 +2375,7 @@ $(function () {
             //Функция находится в шаблоне gulliver.wear.sale.basket.small
             // компонента sale.basket.basket.small ?>
             success: function () {
-                $('#js-fast-ordering-form .modal-body').load('/ajax/fast_ordering_form.php?LANGUAGE_ID=' + LANGUAGE_ID, function () {
+                $('#js-fast-ordering-form .modal-body').load('/ajax/fast_ordering_form.php?LANGUAGE_ID=' +"ru", function () {
                     /*console.log($(this));*/
                     var $popupId = '#js-fast-ordering-form';
                     var $popup = $($popupId);
