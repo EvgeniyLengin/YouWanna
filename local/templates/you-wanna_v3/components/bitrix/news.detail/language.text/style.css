@@ -1,0 +1,100 @@
+.delivery-page {
+    max-width: 825px;
+}
+.delivery-element-name {
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #1d1d1b;
+    text-decoration: none;
+}
+.delivery-element-description {
+    padding-bottom: 25px;
+}
+.delivery-element-description td {
+    border: none;
+}
+.delivery-element-description td:first-child {
+    text-transform: uppercase;
+    width: 40%;
+}
+.delivery-page-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+.delivery-element-description tr td b {
+    font-weight: normal;
+}
+.delivery-element-description tr td:first-child {
+    font-size: 14px;
+}
+.delivery-element-description tr td:last-child {
+    font-size: 16px;
+}
+.delivery-element-description .col span {
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+.returns-page {
+    max-width: 950px;
+}
+.delivery-element-description  .col p {
+    font-size: 18px;
+    line-height: 20px;
+}
+.delivery-element-description .col:last-child {
+    padding-left: 24px;
+}
+.delivery-element-description .col:first-child {
+    padding-right: 30px;
+    padding-left: 0;
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .delivery-page > .col {
+        border-bottom: 1px solid #E5E5E5;
+        padding: 30px 0;
+    }
+    .delivery-page > .col:last-child,
+    .delivery-page > .col:nth-last-child(2) {
+        border: none;
+    }
+    .delivery-page .delivery-element-description {
+        padding-bottom: 0;
+    }
+    .delivery-page .delivery-element-description table {
+        margin-bottom: 0;
+    }
+    .payment-page {
+        padding: 0 2.5%;
+    }
+}
+@media (max-width: 768px) {
+    .delivery-page,
+    .returns-page {
+        width: 95%;
+    }
+    .delivery-element-name {
+        margin-bottom: 5px;
+    }
+    .delivery-element-description td {
+        padding: .2rem;
+    }
+    .delivery-element-description table {
+        margin-bottom: 0;
+    }
+    .delivery-element-description {
+        padding-bottom: 40px;
+    }
+    .delivery-page > .col:first-child {
+        margin-top: 10px;
+    }
+    .delivery-element-description.row > .col {
+        padding: 0;
+    }
+    .delivery-element-description {
+        padding-bottom: 30px;
+    }
+}

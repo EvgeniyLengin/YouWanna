@@ -1,0 +1,151 @@
+<?php
+/**
+ * Языковые фразы
+ *
+ * @var array $MESS
+ */
+$MESS['SOA_TEMPL_PERSON_TYPE'] = 'Payer Type';
+$MESS['SOA_TEMPL_BUTTON'] = 'Complete Order';
+$MESS['SOA_TEMPL_MAKE'] = 'Make Order';
+$MESS['SOA_TEMPL_PROP_INFO'] = 'Payment and Delivery Details';
+$MESS['SOA_TEMPL_PROP_CHOOSE'] = 'Choose previous details:';
+$MESS['SOA_TEMPL_PROP_NEW_PROFILE'] = 'New Profile';
+$MESS['SOA_TEMPL_PAY_SYSTEM'] = 'Payment system';
+$MESS['PAYMENT_NOTE'] = 'You can pay the order after confirmation by the manager.';
+$MESS['SOA_TEMPL_PAY_ACCOUNT'] = 'Pay from Internal Account';
+$MESS['SOA_TEMPL_PAY_ACCOUNT1'] = 'You have';
+$MESS['SOA_TEMPL_PAY_ACCOUNT2'] = 'at your internal account. You can use them to pay the whole or part of the order.';
+$MESS['SOA_TEMPL_DELIVERY'] = 'Delivery service';
+$MESS['SOA_TEMPL_DELIVERY_CHOOSE'] = 'Choose delivery service';
+$MESS['SOA_TEMPL_ORDER_SUC'] = 'Your order <b style="color:#000">##ORDER_ID#</b> of #ORDER_DATE# has been created successfully.';
+$MESS['SOA_TEMPL_ORDER_SUC1'] = "You can keep track of your order in your <a href=\"/personal/privacy-policy/#privacy\">personal area</a>. You will have to enter your login and password to access the area.";
+$MESS['SOA_TEMPL_PAY'] = 'Order payment';
+$MESS['SOA_TEMPL_PAY_LINK'] = "If a payment window has not opened, click <a href=\"#LINK#\" target=\"_blank\">here</a> to pay the order.";
+$MESS['SOA_TEMPL_ERROR_ORDER'] = 'Error creating the order.';
+$MESS['SOA_TEMPL_ERROR_ORDER_LOST'] = 'Order no. #ORDER_ID# cannot be found.';
+$MESS['SOA_TEMPL_ERROR_ORDER_LOST1'] = 'Please contact the store administration or try again.';
+$MESS['SOA_TEMPL_SUM_NAME'] = 'Title';
+$MESS['SOA_TEMPL_SUM_PRICE_TYPE'] = 'Price type';
+$MESS['SOA_TEMPL_SUM_DISCOUNT'] = 'Discount';
+$MESS['SOA_TEMPL_SUM_WEIGHT'] = 'Weight';
+$MESS['SOA_TEMPL_SUM_QUANTITY'] = 'Quantity';
+$MESS['SOA_TEMPL_SUM_PRICE'] = 'Price';
+$MESS['SOA_TEMPL_SUM_WEIGHT_SUM'] = 'Total weight:';
+$MESS['SOA_TEMPL_SUM_SUMMARY'] = 'Items:';
+$MESS['SOA_TEMPL_SUM_VAT'] = 'Tax:';
+$MESS['SOA_TEMPL_SUM_DELIVERY'] = 'Delivery:';
+$MESS['SOA_TEMPL_SUM_IT'] = 'Total:';
+$MESS['SOA_TEMPL_SUM_PAYED'] = 'Paid from internal account:';
+$MESS['SOA_TEMPL_SUM_ADIT_INFO'] = 'Additional information';
+$MESS['SOA_TEMPL_SUM_COMMENTS'] = 'Order comments:';
+$MESS['SOA_TEMPL_SUM_TITLE'] = 'Order Contents';
+$MESS['SOA_TEMPL_ORDER_COMPLETE'] = 'Order complete';
+$MESS['SOA_TEMPL_SUM_PROPS'] = 'Properties';
+$MESS['STOF_PRIVATE_NOTES'] = 'We will not disclose any personal information that we have obtained from you during registration or some other way, to any third party without your consent except situations envisaged by law, or through judgement.';
+$MESS['CAPTCHA_REGF_TITLE'] = 'Please type the word you see in the image';
+$MESS['CAPTCHA_REGF_PROMT'] = 'Type text from image';
+$MESS['STOF_2REG'] = 'Registered users';
+$MESS['STOF_2NEW'] = 'New users';
+$MESS['STOF_LOGIN_PROMT'] = 'If you remember your login and password, type them in the corresponding fields:';
+$MESS['STOF_LOGIN'] = 'Login';
+$MESS['STOF_PASSWORD'] = 'Password';
+$MESS['STOF_FORGET_PASSWORD'] = 'Forgot password?';
+$MESS['STOF_NEXT_STEP'] = 'Continue ordering';
+$MESS['STOF_NAME'] = 'Name';
+$MESS['STOF_LASTNAME'] = 'Last name';
+$MESS['STOF_MY_PASSWORD'] = 'I want my own login and password';
+$MESS['STOF_RE_PASSWORD'] = 'Repeat password';
+$MESS['STOF_SYS_PASSWORD'] = 'System generate login and password';
+$MESS['STOF_REQUIED_FIELDS_NOTE'] = "Mandatory fields are marked with asterisks (<span color=\"#FF0000\">*</span>).";
+$MESS['STOF_EMAIL_NOTE'] = 'You will receive the confirmation message with your login and password upon registration.';
+$MESS['SALE_DELIV_PRICE'] = 'Price';
+$MESS['SOA_NO_JS'] = "The ordering process requires that JavaScript is enabled on your system. JavaScript is disabled or not supported by your browser. Please change the browser settings and <a href=\"\">try again</a>.";
+$MESS['SOA_TEMPL_BUYER_INFO'] = 'Customer information';
+$MESS['SOA_TEMPL_BUYER_SHOW'] = 'Expand';
+$MESS['SOA_TEMPL_BUYER_HIDE'] = 'Hide';
+$MESS['SOA_TEMPL_SUM_PICTURE'] = 'Image';
+$MESS['SOA_POPUP_SAVE'] = 'Save';
+$MESS['SOA_ORDER_GIVE'] = 'Pick-up locations';
+$MESS['SOA_ORDER_GIVE_TITLE'] = 'Pick-up location';
+$MESS['SOA_TEMPL_PAY_PDF'] = "Click <a href=\"#LINK#\" target=\"_blank\">Download invoice</a> to get the invoice in PDF format.";
+$MESS['SOA_TEMPL_PAY_ACCOUNT3'] = 'You have sufficient credit to pay the order in full.';
+$MESS['SOA_TEMPL_EXISTING_PROFILE'] = 'Customer profile:';
+$MESS['SOA_TEMPL_RELATED_PROPS'] = 'Payment and delivery properties';
+$MESS['SOA_TEMPL_PAYSYSTEM_PRICE'] = 'COD: #PAYSYSTEM_PRICE#';
+$MESS['SALE_TYPE'] = 'Price type';
+$MESS['SALE_PRODUCTS'] = 'Products';
+$MESS['SALE_PRODUCTS_SUMMARY'] = 'Products ordered';
+$MESS['SALE_PACKS_COUNT'] = 'Number of packages';
+$MESS['SALE_ORDER_CHANGE'] = 'Modify order';
+$MESS['SOA_ORDER_DELIVERY_EXTRA_PARAMS'] = 'Extra delivery parameters';
+$MESS['SOA_ORDER_DELIVERY_EXTRA_PARAMS_SAVE_ERROR'] = 'Error saving data';
+$MESS['SOA_OTHER_LOCATION'] = 'Other location';
+$MESS['SOA_LOCATION_NOT_FOUND'] = 'Location was not found';
+$MESS['SOA_LOCATION_NOT_FOUND_PROMPT'] = 'Click #ANCHOR#add location#ANCHOR_END# so we know where you want to have your order shipped to';
+$MESS['SOA_NOT_SELECTED_ALT'] = 'Make location more specific if required';
+$MESS['SOA_TEMPL_ORDER_PS_ERROR'] = 'The selected payment method failed. Please contact the site administrator or select another method.';
+$MESS['SOA_TEMPL_YOUR_COUPON'] = 'Your discount coupon!';
+$MESS['SOA_TEMPL_PRINT'] = 'Print';
+$MESS['SOA_TEMPL_DELIVERY_SERVICE_POINT'] = 'Pick-up point (points cities and addresses)';
+$MESS['SOA_TEMPL_DELIVERY_SERVICE_COURIER'] = 'Courier (delivery cities)';
+$MESS['SOA_TEMPL_DELIVERY_SERVICE_MAIL'] = 'Mail';
+$MESS['SOA_TEMPL_ADDRESS'] = 'Delivery address';
+$MESS['SOA_TEMPL_ADDRESS_REGION'] = 'Region';
+$MESS['SOA_TEMPL_ADDRESS_DISTRICT'] = 'District';
+$MESS['SOA_TEMPL_ADDRESS_CITY'] = 'City';
+$MESS['SOA_TEMPL_ADDRESS_STREET'] = 'Street';
+$MESS['SOA_TEMPL_ADDRESS_HOUSE'] = 'House';
+$MESS['SOA_TEMPL_ADDRESS_BUILDING'] = 'Building';
+$MESS['SOA_TEMPL_ADDRESS_FLAT'] = 'Flat (office)';
+$MESS['SOA_TEMPL_ADDRESS_ZIP'] = 'Zip';
+$MESS['SOA_TEMPL_PROP_NAME'] = 'Last name, first name';
+$MESS['SOA_TEMPL_PROP_PHONE'] = 'Cell phone number';
+$MESS['SOA_TEMPL_PAYSYSTEM_1'] = 'Cash';
+$MESS['SOA_TEMPL_PAYSYSTEM_7'] = 'Credit card';
+$MESS['SOA_TEMPL_JS_DELIVERY_PRICE'] = 'Delivery price';
+$MESS['SOA_TEMPL_JS_TOTAL_SUM_WITH_DELIVERY'] = 'Total sum with delivery';
+$MESS['SOA_TEMPL_JS_CURRENCY'] = 'rub.';
+$MESS['SOA_TEMPL_JS_LOADING_POINTS'] = 'Wait for pick-up points list to load. It can take up to a few second';
+$MESS['SOA_TEMPL_JS_LOADING_CITIES'] = 'Wait for courier delivery cities list to load. It can take up to a few second';
+$MESS['SOA_TEMPL_JS_PHONE_FIELD_REQUIRED'] = 'Phone field is required';
+$MESS['SOA_TEMPL_JS_WRONG'] = 'Wrong input';
+$MESS['SALE_PRODUCT'] = 'Product';
+$MESS['SALE_DISCOUNT'] = 'Discount';
+$MESS['SALE_PRICE'] = 'Price';
+$MESS['SALE_QUANTITY'] = 'Quantity';
+$MESS['SALE_SUM'] = 'Total';
+$MESS['SALE_ONE_SIZE'] = 'One size';
+$MESS['EXAMPLE_MOBILE_PHONE'] = 'Mobile phone number, for example, +79115554665';
+$MESS['SALE_DELAY'] = 'Dear customers!<br />
+Due to technical reasons, orders completed from June 30, 2016 to July 15, 2016 will proceed after July 11, 2016. Managers will contact you.<br />
+Sorry for any inconvenience.
+';
+
+$MESS['ORDER_CONFIRM_TIMER_1'] = 'Through';
+$MESS['ORDER_CONFIRM_TIMER_2'] = 'sec. you will be automatically redirected to the payment page ';
+$MESS['ORDER_CONFIRM_TIMER_STOP'] = 'Stop the timer';
+$MESS['ORDER_CONFIRM_PAY_DAYS'] = 'Order must be paid within 3 days, otherwise it will be disbanded and deleted automatically.';
+$MESS['ORDER_CONFIRM_PERIOD_AND_PRICE'] = 'Timing and delivery:';
+$MESS['COMMENT_TO_ORDER'] = 'Write a comment to the order';
+$MESS['SEND_CODE'] = 'Get the code';
+$MESS['SEND_NEW_CODE'] = 'Get a new code';
+$MESS['SEND_CODE_SUCCESS'] = 'Verification code sent';
+$MESS['INPUT_SMS_CODE'] = 'Enter the code from the SMS *';
+
+$MESS['ERROR_TEXT_LOCATION'] = 'City is required';
+$MESS['ERROR_TEXT_ADDRESS'] = 'Delivery address is mandatory';
+$MESS['ERROR_TEXT_FIO'] = 'Name, Name Required';
+$MESS['ERROR_TEXT_EMAIL'] = 'E-Mail is required';
+$MESS['ERROR_TEXT_EMAIL_INCORRECT'] = 'E-Mail address is not filled in correctly';
+$MESS['ERROR_TEXT_PHONE'] = 'Mobile phone number is mandatory';
+$MESS['ERROR_TEXT_SMS_ERROR'] = 'Fill in the correct<br />code from the SMS';
+
+
+$MESS['SOA_TEMPL_ORDER_COMPLETE_1'] = 'Order';
+$MESS['SOA_TEMPL_ORDER_COMPLETE_2'] = 'is processed';
+$MESS['SOA_TEMPL_ORDER_COMPLETE_NOTIFY_TEXT'] = 'Thank you for your order, a confirmation email has been sent to your mail.';
+$MESS['SOA_TEMPL_ORDER_COMPLETE_PAY_2'] = 'Once the Manager will process the order, you can pay it in <a href="/personal/order/#NUM#/">your cabinet</a>.';
+
+$MESS['SOA_TEMPL_ORDER_COMPLETE_PAY_2_CASH'] = 'You can pay cash to the courier.';
+$MESS['NO_SDEK'] = '<legend>Attention!</legend>Delivery to the specified address will be calculated separately. The manager will contact you for further details.';
+$MESS['DELIVERY_PAYMENT'] = '<legend>Attention!</legend>Delivery is paid upon receipt of the order in cash to the courier.<br>Cost of delivery: ';

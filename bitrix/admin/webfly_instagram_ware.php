@@ -1,0 +1,1 @@
+<?php require ("/home/bitrix/www/bitrix/modules/webfly.instagram/admin/ware.php");?>

@@ -1,0 +1,349 @@
+#ORDER_FORM.disabled {
+    opacity: 0.5;
+}
+/*.content.push-center.mw1200 {
+    max-width: 1300px;
+}
+.row.gutters>.col {
+    margin-left: 1%;
+}*/
+#order_form_div input[type=text],
+#order_form_div input[type=tel] {
+    border-radius: 0;
+}
+#order_form_div fieldset {
+    border: none;
+    /*width: 70%;*/
+    padding: 1rem;
+}
+#order_form_div .pay-system-block .pay-system-block-inner img {
+    max-width: none;
+    margin-left: 6%;
+}
+#order_form_div .pay-system-container input:checked + .pay-system-block .pay-system-block-inner img {
+    margin-left: -94% !important;
+}
+#order_form_div .pay-system-block .pay-system-block-inner {
+    overflow: hidden;
+}
+#order_form_div .form-item-inner {
+    position: relative;
+    width: 60%;
+}
+#order_form_div .form-item-inner input.error {
+    background-color: inherit;
+    border: 1px solid #d4d4d4;
+    border-bottom: 1px solid #f583a0;
+}
+#order_form_div .form-item-inner div.error{
+    position: absolute;
+    right: -165px;
+    top: 3px;
+    width: 160px;
+    line-height: 15px;
+}
+.payment_note {
+    margin-bottom: 10px;
+    border-bottom: 1px dotted;
+    padding-bottom: 5px;
+}
+.delivery-info-header {
+    font-size: 12px;
+}
+.right-order-block {
+    width: 500px;
+    padding: 1rem;
+}
+.text-center.aux-margin-top-1.aux-margin-bottom-1.col.col-6.first {
+    text-align: left;
+}
+.text-center.aux-margin-top-1.aux-margin-bottom-1.col.col-6.first .button {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 28px;
+}
+tr.summary-delivery-price-row td, tr.total td {
+    padding: 0 0 0 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.phone-input-wrapper {
+    padding-right: 10px;
+}
+.phone-input-wrapper input {
+    margin-bottom: 5px;
+}
+.phone-input-wrapper .js-send-sms-code {
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
+    line-height: 23px;
+    font-size: 11px !important;
+    font-weight: 600;
+    font-family: inherit;
+}
+
+.left-order-block legend {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+#top-catalog-menu {
+    max-width: 1300px;
+}
+.main-menu#top-catalog-menu .list .list__item {
+    margin-right: 2.8em;
+}
+h1.order-page-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+#sale_order_props legend {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+#sale_order_props legend .legend-text {
+    position: absolute;
+    right: -270px;
+    font-size: 14px;
+}
+#sale_order_props legend .legend-text a {
+    color: #a6a6a6;
+}
+.form-group input.form-control::-moz-placeholder { text-transform: uppercase; }
+.form-group input.form-control::-webkit-input-placeholder { text-transform: uppercase; }
+#order_form_div .suggestions-constraints li {
+    background: none;
+    border: none;
+}
+#order_form_div .bx-sls .bx-ui-sls-fake, #order_form_div .bx-sls .bx-ui-sls-route {
+    height: 43px;
+}
+#order_form_div .bx-sls .bx-ui-sls-container {
+    min-height: 45px;
+}
+.bx-sls .dropdown-fade2white {
+    height: 31px;
+}
+#order_form_div .bx-sls .bx-ui-sls-clear {
+    top: 5px;
+}
+#order_form_div .bx-sls .dropdown-icon {
+    top: 15px;
+}
+/*#order_form_div input[type=radio] {*/
+/*    width: 25px !important;*/
+/*    height: 25px !important;*/
+/*}*/
+#order_form_div .delivery-system-text span {
+    text-transform: uppercase;
+}
+#sale_order_props {
+    margin-top: 0;
+}
+.location-block-wrapper .bx-sls .dropdown-block {
+    height: 45px;
+}
+.location-block-wrapper .bx-sls .bx-ui-sls-fake {
+    font-style: italic;
+}
+.delivery-system-block-name,
+.delivery-system-block-text {
+
+}
+.pay-system-container label {
+    width: 100px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+.pay-system-container input[type=radio] {
+    display: none;
+}
+.bx-ui-sls-pane {
+    bottom: auto !important;
+}
+.pay-system-container .pay-system-block-inner {
+    border: 1px solid #333;
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+.pay-system-container .pay-system-block-inner img {
+    max-height: 80%;
+    max-width: 80%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.pay-system-container .pay-system-block-name {
+    color: #999;
+    white-space: nowrap;
+}
+.pay-system-container input:checked + .pay-system-block .pay-system-block-inner {
+    background: #333;
+    cursor: default;
+}
+.pay-system-container input:checked + .pay-system-block .pay-system-block-name {
+    color: #333;
+}
+#sale_order_props .suggestions-wrapper {
+    position: absolute;
+}
+
+.order-make-c {
+    /*max-width: 405px;*/
+    margin: 0 auto;
+}
+
+.success.order-page-title {
+    display: none;
+}
+
+.order-confirm-page * {
+    border:none;
+}
+
+.success-page-title {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 41px;
+    margin-bottom: 0;
+}
+.sale_order_full_table td,
+.sale_order_full_table tr {
+    padding: 0;
+    text-align: center;
+    line-height:20px;
+    font-size: 18px;
+}
+
+.sale_order_full_table .desc-success {
+    padding: 5px 1em 40px;
+}
+
+.sale_order_full_table .paysystem_name {
+    padding-bottom: 26px;
+}
+
+.order-done {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sale_order_full_table table form {
+    width: 405px;
+    text-align: center;
+}
+
+.sale_order_full_table table form input:last-child {
+    width: 200px;
+    height: 55px;
+    margin: 0 auto;
+}
+
+.order-confirm-page .inner {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-confirm-page .inner b {
+    font-family: GillSans SemiBold;
+    font-size: 30px;
+}
+
+/* sberbank-acquiring */
+.sale-paysystem-wrapper > span:not(.error),
+.sale-paysystem-wrapper > form > p,
+.sale-paysystem-wrapper > form > div > div > span {
+    display: none;
+}
+.sale-paysystem-wrapper form input {
+    width: 360px;
+    color:#fff;
+    text-transform: uppercase;
+    background: #68AF19;
+    cursor: pointer;
+    border-radius: 0;
+    margin: 0 auto;
+}
+/* /sberbank-acquiring */
+
+.delivery_price {
+    padding: 1rem;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #order_form_div fieldset,
+    .right-order-block {
+        width: 90%;
+    }
+    #basket-root {
+        margin-right: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    #order_form_div .form-item-inner div.error {
+        position: initial;
+        font-size:14px;
+        width: auto;
+        margin-top:10px;
+        margin-bottom: -0.7rem;
+    }
+    #order_form_div fieldset {
+        width: 100%;
+    }
+    .right-order-block {
+        width: 100%;
+    }
+    #sale_order_props legend .legend-text {
+        right: auto;
+        left: 16px;
+        top:-5px;
+        width: 300px;
+    }
+    .phone-input-wrapper {
+        padding: 0;
+    }
+    .order-done {
+        margin-top: 25px;
+    }
+    .success-page-title {
+        font-size: 24px;
+    }
+    .sale_order_full_table .desc-success {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    .sale_order_full_table .paysystem_name {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .sale_order_full_table table form {
+        max-width: 405px;
+        width: 95%;
+        margin: 0 auto;
+    }
+    .pay-system-container .pay-system-block-name {
+        white-space: normal;
+    }
+}
+@media (max-width: 480px) {
+    #order_form_div .form-item-inner {
+        width: 100%;
+    }
+}
+/*mail subscribe hidden*/
+[data-property-id-row="10"]{
+    display: none;
+}

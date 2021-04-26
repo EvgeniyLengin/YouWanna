@@ -1,0 +1,24 @@
+.last_item {
+    position: relative;
+}
+.hidden_elements {
+    display: none;
+    position: absolute;
+    left: -30px;
+    list-style-type: none;
+    margin-left: 0px;
+}
+#top-catalog-menu .list__item.active {
+    position: relative;
+}
+#top-catalog-menu .list__item.active:before {
+    content: '';
+    display: table;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -15px;
+    left: 40%;
+    background-color: #000;
+    border-radius: 50%;
+}

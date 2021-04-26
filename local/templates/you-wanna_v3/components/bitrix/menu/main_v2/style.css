@@ -1,0 +1,215 @@
+.yw-topmenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    position: relative;
+}
+
+.yw-topmenuitem > a {
+    text-decoration: none;
+    margin-right: 30px;
+    line-height: 16px;
+    padding: 15px 0;
+    display: inline-block;
+    color: #000000;
+    letter-spacing: 0.065em;
+}
+
+.yw-topmenuitem:last-child > a {
+    margin-right: 0;
+}
+
+.yw-topmenuitem a:hover {
+    color: rgba(0,0,0,0.5);
+}
+
+.yw-topmenusub-wrap {
+    display: none;
+    position: absolute;
+    margin: 0;
+    left: 0;
+    top: 100%;
+    width: 100%;
+}
+.yw-topmenusub {
+    list-style: none;
+    margin: 0;
+    padding: 45px 0 30px;
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-position: right 45px;
+    background-size: auto calc(100% - 75px);
+    min-height: 470px;
+    z-index: 11;
+}
+
+@media screen and (min-width: 1025px) {
+    .yw-topmenuitem:hover .yw-topmenusub-wrap {
+        display: block
+    }
+    .yw-topmenuitem:hover .yw-topmenusub-wrap:before {
+        content: '';
+        width: 100vw;
+        height: 100%;
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .yw-topmenuitem:hover .yw-topmenusub {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        position: relative;
+    }
+}
+
+.yw-topmenusubitem > a {
+    font-weight: 300;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    color: #000000;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media all and (max-width: 1600px) {
+    .yw-topmenu {
+        font-size: 13px;
+    }
+
+    .yw-topmenuitem > a {
+        margin-right: 20px;
+    }
+}
+
+@media all and (max-width: 1366px) {
+    .yw-topmenu {
+        font-size: 12px;
+    }
+
+    .yw-topmenuitem > a {
+        margin-right: 15px;
+    }
+
+    .yw-topmenusub {
+        padding: 45px 0 30px;
+        background-position: right 45px;
+    }
+}
+
+@media all and (max-width: 1240px) {
+    .yw-topmenu {
+        font-size: 10px;
+    }
+
+    .yw-topmenuitem > a {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #top-catalog-menu {
+        width: 240px;
+        right: unset;
+    }
+    .yw-topmenu {
+        flex-direction: column;
+        padding: 0 20px 20px;
+        margin-top: 20px;
+        font-size: 15px;
+        max-height: calc(100% - 60px);
+        overflow-y: auto;
+    }
+
+    .yw-topmenuitem > a {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .yw-topmenusub-wrap {
+        position: static;        
+    }
+
+    .yw-topmenusub {
+        position: static;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        background-image: none !important;
+        padding: 0px 0 5px 15px;
+        min-height: unset;
+    }
+
+    .yw-topmenusubitem > a {
+        font-size: 15px;
+        padding: 5px 0;
+        line-height: 18px;
+    }
+
+    .yw-topmenuitem.open .yw-topmenusub-wrap {
+        display: block;        
+    }
+
+    .yw-topmenuitem.parent {
+        position: relative;
+    }
+
+    .yw-topmenuitem.parent:not(:last-of-type) .yw-topmenusub-wrap {
+        display: none;
+    }
+
+    .yw-topmenuitem.parent:last-of-type:after {
+        background-image: url(/local/templates/you-wanna_v3/img/arrow.svg);
+        content: '';
+        background-position: center center;
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 36px;
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .yw-topmenuitem.parent.open:after {
+        transform: scaleY(-1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .yw-topmenu {
+        max-height: calc(100% - 140px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .yw-topmenu {
+        font-size: 14px;
+    }
+    .yw-topmenusubitem > a {
+        font-size: 14px;
+    }
+}

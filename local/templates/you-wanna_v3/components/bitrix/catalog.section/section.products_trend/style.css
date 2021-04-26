@@ -1,0 +1,26 @@
+/*#js-ajax-nav-section-catalog .owl-stage-outer,*/
+/*#js-ajax-nav-section-catalog .owl-stage-outer .owl-stage,*/
+/*#js-ajax-nav-section-catalog .owl-stage-outer .owl-stage .owl-item,*/
+/*#js-ajax-nav-section-catalog .owl-stage-outer .owl-stage .owl-item div,*/
+/*#js-ajax-nav-section-catalog div.owl-carousel.single-item.owl-loaded.owl-drag .owl-stage-outer div.owl-item img {*/
+/*    height: 100%;*/
+/*}*/
+
+#detail-item-popup a.b-nav-buttons__btn_type-next {
+
+}
+.modal.detail-item-inner.open .owl-next, .modal.detail-item-inner.open .owl-prev {
+    width: 50%;
+    height: 100%;
+    background: none;
+}
+.modal.detail-item-inner.open .owl-next {
+    right: 0;
+}
+.modal.detail-item-inner.open .owl-prev {
+    left: 0;
+}
+
+.hidden-price {
+	display: none;
+}

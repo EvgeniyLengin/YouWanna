@@ -1,0 +1,83 @@
+/* Left menu*/
+ul.left-menu
+{
+	list-style:none;
+	margin:0; padding:0;
+	margin-bottom:8px;
+	position: relative; /*IE bug*/
+}
+
+ul.left-menu li
+{
+	padding: 10px 16px;
+	background:#F5F5F5 url(images/left_menu_bg.gif) top repeat-x;
+}
+
+ul.left-menu li a
+{
+	font-size:100%;
+	color:#BC262C;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+ul.left-menu li a:visited
+{
+	color:#BC262C;
+}
+
+ul.left-menu li a:hover
+{
+	color:#BC262C;
+}
+
+
+ul.left-menu li a.selected:link,
+ul.left-menu li a.selected:visited,
+ul.left-menu li a.selected:active,
+ul.left-menu li a.selected:hover
+{
+	color:#FC8D3D;
+}
+
+ul.personal-menu {
+	list-style: none;
+}
+.profile-name {
+	font-weight: bold;
+}
+.personal-menu-item {
+	line-height: 40px;
+	margin-right: 3.85em;
+	position: relative;
+}
+.personal-menu-item a {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #1d1d1b;
+	text-decoration: none;
+	white-space: nowrap;
+}
+.personal-menu-item.active {
+	font-weight: 600;
+}
+.personal-menu-item.active:before {
+	content: '';
+	display: table;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: -25px;
+	top: 35%;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+@media (max-width: 768px){
+	.personal-box {
+		margin-top: 50px;
+	}
+	.personal-right-block {
+		padding: 20px 10px;
+	}
+}

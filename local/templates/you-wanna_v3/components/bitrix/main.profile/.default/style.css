@@ -1,0 +1,119 @@
+.profile-block-hidden
+{
+	display: none;
+}
+
+.profile-block-shown
+{
+	display:block;
+}
+
+.profile-table
+{
+	width: 100%;
+}
+
+.profile-link
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+.profile-table td {
+	vertical-align: top;
+	width:50%;
+}
+
+div.bx-auth-profile input.bx-auth-input {vertical-align:middle;}
+div.bx-auth-profile span.bx-auth-secure {background-color:#FFFAE3; border:1px solid #DEDBC8; padding:2px; display:inline-block; vertical-align:middle;}
+div.bx-auth-profile div.bx-auth-secure-icon {background-image:url(images/sec.png); background-repeat:no-repeat; background-position:center; width:19px; height:18px;}
+div.bx-auth-profile div.bx-auth-secure-unlock {background-image:url(images/sec-unlocked.png);}
+
+.personal-left-block-wrapper, .personal-right-block-wrapper {
+	padding: 25px;
+}
+.personal-left-block {
+	background-color: #fff;
+	position: relative;
+	padding: 85px 20px 20px 20px;
+}
+.personal-right-block {
+	background-color: #fff;
+	padding: 20px 100px;
+}
+.personal-left-block img {
+	border-radius: 50%;
+	position: absolute;
+	top: -75px;
+	left: 40px;
+}
+.profile-page-title {
+	text-transform: uppercase;
+	font-size: 36px;
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 45px;
+}
+
+.page-wrapper {
+	background-color: #f5f5f5;
+}
+.form-item {
+	margin-bottom: 1rem !important;
+}
+.form-item label {
+	color: #c5c5c5;
+	margin-left: 20px;
+}
+.checkbox-invisible {
+	display: none !important;
+	margin-right: 15px;
+}
+
+.checkbox-custom {
+	position: relative;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #ccc;
+	border-radius: 3px;
+	margin-right: 10px;
+}
+
+.checkbox-custom,
+.checkbox-label {
+	display: inline-block;
+	vertical-align: middle;
+}
+.checkbox-label {
+	text-transform: uppercase;
+	cikir: #818181;
+}
+
+.checkbox-invisible:checked + .checkbox-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: #413548;
+	border-radius: 2px;
+}
+.personal-right-block-wrapper input[type='text'],input[type='password'] {
+	border-color: #b5b5b5 !important;
+	border-radius: 0 !important;
+}
+input[type='submit'] {
+	padding: 8px 70px;
+	font-size: 15px !important;
+	font-weight: 600;
+	border-radius: 0;
+	height: auto;
+}
+label.checkbox {
+	margin-left: 0 !important;
+}

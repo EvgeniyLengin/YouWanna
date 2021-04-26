@@ -1,0 +1,186 @@
+.shope-one-page-title {
+	text-transform: uppercase;
+	text-align: center;
+	margin: 50px 0;
+	font-size: 36px;
+}
+
+.shop-one {
+	margin:0 auto;
+	max-width: 950px;
+}
+
+.shop-one .shop-info .shop-phone a {
+	text-decoration: none;
+}
+
+.shop-one .shop-info {
+	margin-bottom:25px;
+}
+
+.shop-one .shop-info .col{
+	padding-left:4em;
+}
+
+.shop-one .shop-info p {
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.shop-one .shop-info h3 {
+	margin-bottom: 15px;
+	font-size: 18px;
+	line-height: 18px;
+}
+
+.shop-one .shop-images div {
+	margin-top:25px;
+
+}
+
+.shops-menu {
+	position: absolute;
+	left: 50px;
+	margin: 0;
+	list-style-type: none;
+}
+
+.shops-menu .shop-item{
+	line-height: 40px;
+	margin-right: 3.85em;
+	position: relative;
+}
+
+.shops-menu .shop-item a {
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #1d1d1b;
+	text-decoration: none;
+}
+
+.shops-menu .shop-item a.active::before {
+	content: '';
+	display: table;
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	left: -18px;
+	top: 35%;
+	background-color: #000;
+	border-radius: 50%;
+}
+
+@media (min-width: 1025px) {
+	.shop-one {
+		min-width: 950px;
+	}
+}
+
+/* tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+	.shope-one-page-title {
+		margin-top:0;
+	}
+	.shops-menu .shop-item {
+		margin-right: 0;
+	}
+	.shops-menu .shop-item a {
+		font-size: 16px;
+	}
+	.shop-one {
+		max-width: 950px;
+		width: 100%;
+		padding-left: 13em !important;
+	}
+	.shop-one .shop-info * {
+		font-size: 16px !important;
+	}
+	.shop-one .shop-info .col {
+		padding-left: 20px;
+	}
+	.shops-c.shop-one, .shops-c.shop-list {
+		width: 950px;
+	}
+	/*.shops.main.push-center {
+		margin: inherit !important;
+	}*/
+	.shops-menu {
+		top:75px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.main.shops {
+		width: 100%;
+	}
+	.shope-one-page-title {
+		margin-top:25px;
+		font-size: 30px;
+	}
+	.shops-c.shop-one {
+		width: 95%;
+		padding: 40px 0 0 !important;
+	}
+
+	.shops-menu {
+		top:70px;
+		background: #fff;
+		padding-bottom: 10px;
+		z-index: 20;
+		left:0;
+		right:0;
+	}
+
+	.shops-menu .shop-item .toggle {
+		cursor: pointer;
+	}
+
+	.shops-menu .shop-item .toggle::after {
+		content: '';
+		display: inline-block;
+		width: 10px;
+		height: 100%;
+		position: absolute;
+		right: -12px;
+		background: url('images/toggle-icon.png') center no-repeat;
+		top: 0;
+	}
+
+	.shops-menu .shop-item {
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.shops-menu .shop-item.hm {
+		display: none;
+	}
+
+	.shops-menu .shop-item a {
+		position: relative;
+	}
+
+	.shop-one .shop-info .col {
+		padding-left: 0;
+		padding-right: 2em;
+	}
+
+	.shop-one .shop-info {
+		margin-bottom: 0;
+	}
+
+	.shop-name {
+		display: none;
+	}
+
+    .shops-map-c {
+        margin-bottom: 10px;
+    }
+
+    .shop-one .shop-images div {
+        margin-top:10px;
+    }
+
+    .shops-c {
+        padding-bottom: 10px !important;
+    }
+}

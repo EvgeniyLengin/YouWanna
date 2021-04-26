@@ -1,0 +1,169 @@
+Options -Indexes
+ErrorDocument 404 /404.php
+
+php_value upload_max_filesize 175K
+php_value post_max_size 175K
+
+<IfModule mod_php5.c>
+  php_flag session.use_trans_sid off
+  #php_value display_errors 1
+  #php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+
+  RewriteCond %{SERVER_PORT} !^443$
+  RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$
+  RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+  RewriteCond %{QUERY_STRING} ^(.*&)?register=yes(&.*)?$ [NC]
+  RewriteRule ^([/a-z0-9_-]+)?/(index.php)?$ /personal/register.php [R=301,L,NE]
+
+
+  # Редирект со страницы без / на страницу со /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_METHOD} =GET
+  RewriteCond %{REQUEST_FILENAME} !^/?bxajaxid=*
+  RewriteCond %{REQUEST_URI} ^(.*/[^/\.]+)$
+  RewriteRule ^(.*)$ %1/ [R=301,L]
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-l
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+  RewriteRule ^(.*)$ /local/urlrewrite.php [L]
+  RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+
+  Redirect 301 /product-category/verhnyaya-odezhda/ /catalog/outerwear/
+  Redirect 301 /product/verhnyaya-odezhda/trench-2/ /catalog/trench/trench-636197/
+  Redirect 301 /product-category/platya/ /catalog/dresses/
+  Redirect 301 /product-category/verhnyaya-odezhda/page/2/ /catalog/outerwear/
+  Redirect 301 /product-category/platya/page/2/ /catalog/dresses/?PAGEN_1=2
+  Redirect 301 /product-category/kostyumy/ /catalog/costumes/
+  Redirect 301 /product-category/futbolki/ /catalog/t_shirts/
+  Redirect 301 /product/bryuki/dzhogery-bordovye/ /catalog/pants_and_skirts/dzhogery-2404165/
+  Redirect 301 /product-category/platya/page/3/ /catalog/dresses/
+  Redirect 301 /product/futbolki/futbolka-4/ /catalog/tops_and_blouses/futbolka-201874/
+  Redirect 301 /product-category/bryuki/ /catalog/pants/
+  Redirect 301 /product-category/verhnyaya-odezhda/page/3/ /catalog/outerwear/?PAGEN_1=3
+  Redirect 301 /product/komplekty/kostyum-18/ /catalog/kits/kostyum-180806/
+  Redirect 301 /product-category/topy-i-bluzy/ /catalog/tops_and_blouses/
+  Redirect 301 /product/platya/plate-rubashka-7/ /catalog/dress_dresses/plate-rubashka-ita15053/
+  Redirect 301 /product/verhnyaya-odezhda/palto-2/ /catalog/coat/palto-khalat-141238/
+  Redirect 301 /product/verhnyaya-odezhda/trench-3/ /catalog/outerwear/trench-646172/
+  Redirect 301 /product-category/rubashki/ /catalog/shirts/
+  Redirect 301 /product-category/platya/page/4/ /catalog/dresses/?PAGEN_1=4
+  Redirect 301 /product-category/tuniki/ /catalog/tunics/
+  Redirect 301 /o-dostavke/ /about/delivery/
+  Redirect 301 /product/kostyumy/kostyum-20/ /catalog/kits/kostyum-1801105/
+  Redirect 301 /product-category/yubki/ /catalog/skirts/
+  Redirect 301 /product/komplekty/kostyum-22/ /catalog/kits/kostyum-1801105/
+  Redirect 301 /product-category/zhakety/ /catalog/jackets/
+  Redirect 301 /product-category/platya/page/5/ /catalog/dresses/?PAGEN_1=5
+  Redirect 301 /contact-us/ /about/contacts/
+  Redirect 301 /product-category/komplekty/ /catalog/kits/
+  Redirect 301 /product/verhnyaya-odezhda/zhilet/ /catalog/outerwear/zhilet-535071/
+  Redirect 301 /product-category/kardigany/ /catalog/cardigans/
+  Redirect 301 /product-category/jersey/ /catalog/jersey/
+  Redirect 301 /product/rubashki/rubashka-frak/ /catalog/shirts/rubashka-041221/
+  Redirect 301 /product/platya/plate-58/ /catalog/dress_dresses/plate-201883/
+  Redirect 301 /product-category/kofty/ /catalog/sweater/
+  Redirect 301 /product-category/kostyumy/page/2/ /catalog/costumes/?PAGEN_1=2
+  Redirect 301 /product/verhnyaya-odezhda/trench/ /catalog/outerwear/trench-636197/
+  Redirect 301 /product/platya/plate-tolstovka-2/ /catalog/dresses/plate-tolstovka-201821/
+  Redirect 301 /product/verhnyaya-odezhda/dzhinsovka/ /catalog/outerwear/dzhinsovaya-kurtka-201829/
+  Redirect 301 /product/verhnyaya-odezhda/trench-4/ /catalog/outerwear/trench-646172/
+  Redirect 301 /checkout/ /personal/make/
+  Redirect 301 /product/verhnyaya-odezhda/palto/ /catalog/outerwear/palto-khalat-141238/
+  Redirect 301 /product/platya/plate-s-shifonom-2/ /catalog/dresses/plate-s-shifonom-201866/
+  Redirect 301 /product/verhnyaya-odezhda/plashh-s-vstavkami/ /catalog/outerwear/trench-s-vstavkami-201851/
+  Redirect 301 /product-category/kombinezony/ /catalog/overalls/
+  Redirect 301 /product-category/rubashki/page/2/ /catalog/shirts/?PAGEN_1=2
+  Redirect 301 /product/komplekty/kostyum-21/ /catalog/kits/kostyum-201824/
+  Redirect 301 /product/platya/plate-53/ /catalog/dresses/plate-sorochka-1801101/
+  Redirect 301 /product-category/topy-i-bluzy/page/2/ /catalog/tops_and_blouses/?PAGEN_1=2
+  Redirect 301 /product/jersey/kardigan/ /catalog/outerwear/kardigan-201817/
+  Redirect 301 /product-category/bryuki/page/2/ /catalog/pants/?PAGEN_1=2
+  Redirect 301 /product/verhnyaya-odezhda/palto-4/ /catalog/outerwear/palto-141250/
+  Redirect 301 /product/verhnyaya-odezhda/palto-3/ /catalog/outerwear/palto-121258/
+  Redirect 301 /product-category/futbolki/page/2/ /catalog/t_shirts/?PAGEN_1=2
+  Redirect 301 /product-category/jersey/page/2/ /catalog/jersey/?PAGEN_1=2
+  Redirect 301 /product/komplekty/kostyum-17/ /catalog/kits/kostyum-201824/
+  Redirect 301 /product/jersey/kofta-6/ /catalog/jersey/
+  Redirect 301 /product-category/komplekty/page/2/ /catalog/kits/?PAGEN_1=2
+  Redirect 301 /product/verhnyaya-odezhda/poncho/ /catalog/outerwear/poncho-201816/
+  Redirect 301 /product/jersey/plate-19/ /catalog/dresses/plate-tunika-180525/
+  Redirect 301 /product/platya/plate-63/ /catalog/dresses/plate-20183/
+  Redirect 301 /product/yubki/yubka-9/ /catalog/pants_and_skirts/yubka-201875/
+  Redirect 301 /product/verhnyaya-odezhda/dzhinsovaya-kurtka-2/ /catalog/outerwear/dzhinsovaya-kurtka-201823/
+  Redirect 301 /product/verhnyaya-odezhda/kozhanaya-kurtka/ /catalog/outerwear/kozhanaya-kurtka-180107/
+  Redirect 301 /product-category/jersey/page/3/ /catalog/jersey/?PAGEN_1=3
+  Redirect 301 /product-category/kofty/page/2/ /catalog/sweater/?PAGEN_1=2
+  Redirect 301 /product-category/zhakety/page/2/ /catalog/jackets/?PAGEN_1=2
+  Redirect 301 /product/jersey/svitshot/ /catalog/jersey/svitshot-201855/
+  Redirect 301 /product/verhnyaya-odezhda/pidzhak-4/ /catalog/kits/pidzhak-201810/
+  Redirect 301 /product/komplekty/kostyum-19/ /catalog/kits/kostyum-201853/
+  Redirect 301 /product/platya/plate-60/ /catalog/dress_dresses/plate-201894/
+  Redirect 301 /product-category/tuniki/page/2/ /catalog/tunics/?PAGEN_1=2
+  Redirect 301 /product/yubki/yubka-8/ /catalog/pants_and_skirts/yubka-201834/
+  Redirect 301 /product/platya/plate-s-volanami/ /catalog/dresses/plate-s-volanami-201879/
+  Redirect 301 /product/platya/plate-59/ /catalog/jersey/plate-tolstovka-201877/
+  Redirect 301 /product/futbolki/futbolka-6/ /catalog/tops_and_blouses/futbolka-201886/
+  Redirect 301 /product/platya/plate-rubashka-6/ /catalog/dresses/plate-rubashka-20187/
+  Redirect 301 /product/jersey/plate-s-shifonom/ /catalog/dresses/plate-s-shifonom-201866/
+  Redirect 301 /product/platya/plate-55/ /catalog/dresses/plate-180124/
+  Redirect 301 /product/komplekty/kombinezon-3/ /catalog/kits/kombinezon-180111/
+  Redirect 301 /product/jersey/kardigan-2/ /catalog/jersey/kardigan-201815/
+  Redirect 301 /product/komplekty/kostyum-8/ /catalog/kits/kostyum-201824/
+  Redirect 301 /product-category/kardigany/page/2/ /catalog/cardigans/?PAGEN_1=2
+  Redirect 301 /product/bryuki/bryuki/ /catalog/pants_and_skirts/bryuki-180120/
+  Redirect 301 /product/futbolki/futbolka-3/ /catalog/tops_and_blouses/futbolka-201828/
+  Redirect 301 /product/bryuki/bryuki-v-kletku/ /catalog/pants_and_skirts/bryuki-180120/
+  Redirect 301 /product/verhnyaya-odezhda/plashh/ /catalog/outerwear/plashch-636187/
+  Redirect 301 /product/platya/plate-kruzhevo/ /catalog/dresses/plate-041231/
+  Redirect 301 /product/verhnyaya-odezhda/trench-5/ /catalog/outerwear/trench-201897/
+  Redirect 301 /product/platya/plate-tunika-4/ /catalog/dresses/plate-tunika-180134/
+  Redirect 301 /product/verhnyaya-odezhda/dzhinsovaya-kurtka-s-mehom/ /catalog/outerwear/dzhinsovaya-kurtka-s-mekhom-201843/
+  Redirect 301 /product/platya/plate-62/ /catalog/dresses/plate-201888/
+  Redirect 301 /product/platya/plate-rubashka-5/ /catalog/dresses/plate-rubashka-201848/
+  Redirect 301 /product-category/jersey/page/4/ /catalog/jersey/?PAGEN_1=2
+  Redirect 301 /product/bryuki/bryuki-6/ /catalog/pants_and_skirts/bryuki-200922ita/
+  Redirect 301 /product/komplekty/kombinezon-4/ /catalog/kits/kombinezon-180133/
+  Redirect 301 /product/platya/plate-61/ /catalog/dresses/plate-231046/
+  Redirect 301 /product/rubashki/rubashka-5/ /catalog/shirts/rubashka-20188/
+  Redirect 301 /my-account/lost-password/ /
+  Redirect 301 /agreement/ /personal/oferta/
+  Redirect 301 /my-account/ /personal/profile/
+  Redirect 301 /shop/ /catalog/
+  Redirect 301 http://you-wanna.ru/contact-us/ http://you-wanna.ru/about/contacts/
+  Redirect 301 http://you-wanna.ru/o-dostavke/ http://you-wanna.ru/about/delivery/
+  Redirect 301 http://you-wanna.ru/product-category/platya/ https://you-wanna.ru/catalog/dresses/
+  Redirect 301 http://you-wanna.ru/product-category/verhnyaya-odezhda/ https://you-wanna.ru/catalog/outerwear/
+  Redirect 301 /?s=Пальто&post_type=product /catalog/search/?q=пальто
+  Redirect 301 /?s=Тренч&post_type=product /catalog/search/?q=тренч
+  Redirect 301 /magaziny/ /shops/
+  Redirect 301 /my-account/orders/ /personal/order/
+  Redirect 301 /product-category/pidzhaki/ /catalog/pidzhaki/
+  Redirect 301 /product/ /catalog/
+  Redirect 301 /?set_lang=ru /
+</IfModule>
+
+
+<IfModule mod_dir.c>
+  DirectoryIndex index.php index.html
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive on
+  ExpiresByType image/jpeg "access plus 3 day"
+  ExpiresByType image/gif "access plus 3 day"
+  ExpiresByType image/png "access plus 3 day"
+  ExpiresByType text/css "access plus 3 day"
+  ExpiresByType application/javascript "access plus 3 day"
+</IfModule>
