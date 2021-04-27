@@ -513,6 +513,7 @@ span.elem._elem4.animate-wanna4 {
     padding-right: 10px;
 }
 
+/* Модальное окно быстрого оформления заказа */
 .fast-basket-modal .bx-basket-item-list-item-img {
     max-width: 200px;
 }
@@ -531,34 +532,93 @@ span.elem._elem4.animate-wanna4 {
 }
 
 .fast-basket-modal .bx-basket-item-list-item-remove {
-    right: 75px;
-    top: 35px;
-    font-weight: 500;
-    color: black;
+    position: relative;
 }
 
 .fast-basket-modal .bx-basket-item-list-item-remove:after {
-    left: -13px;
-    top: 12px;
+    display: none;
 }
 
 .fast-basket-modal .bx-basket-item-list-item-remove:before {
-    left: -13px;
-    top: 12px;
+    display: none;
 }
+
 #bx_basketFKauiI .bx-basket-item-list-button-container a {
-z-index: 1000;
-background: black;
-color: white;
-max-width: 100%;
-font-weight: 600;
-text-decoration: unset;
-text-transform: uppercase;
-border: 2px solid transparent;
-box-sizing: border-box;
+    z-index: 1000;
+    background: black;
+    color: white;
+    max-width: 85%;
+    font-weight: 600;
+    text-decoration: unset;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
+.fast-basket-modal .bx-basket-item-list-item {
+    display: flex;
+}
 
+.fast-basket-modal .bx-basket-item-list-item-description {
+    padding-left: 25px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.fast-basket-modal .bx-basket-item-list-item-description .bx-basket-item-list-item-name a {
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+}
+
+/* ORDER */
+.fast-basket-modal .bx-basket-item-list-item-description .bx-basket-item-list-item-name {
+    order: 1;
+    margin-bottom: 15px;
+}
+
+/* Не по порядку, поскольку кто-то задал одинаковые классы. Доступ только к стилям. Разметку не меняю */
+.basket-item-property.basket-item-property-scu-text {
+    order: 3;
+}
+
+.basket-item-property.basket-item-property-scu-text.basket-item-property--color {
+    order: 2;
+}
+
+#basket-root .basket-item-property--color .basket-item-property-name {
+    margin-right: 90px;
+}
+
+.fast-basket-modal .basket-items-list-item-amount {
+    order: 4;
+}
+
+.fast-basket-modal .bx-basket-item-list-item-remove {
+    order: 5;
+    width: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+    max-width: max-content;
+    margin-left: 10px;
+    padding-bottom: 21px;
+}
+
+.fast-basket-modal .bx-basket-item-list-item-price-block {
+    order: 6;
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+.fast-basket-modal #basket-root .basket-property-value-select span {
+    padding-right: 2px;
+}
 
 @media screen and (max-width: 1024px) {
     .yw-topmenusub-wrap .yw-topmenusub {

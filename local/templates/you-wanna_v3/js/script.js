@@ -81,7 +81,7 @@ $(document).on('click', '.cls-next-step-btn', function(){
 
     }
 
-    console.log(y);
+
 
 
     }
