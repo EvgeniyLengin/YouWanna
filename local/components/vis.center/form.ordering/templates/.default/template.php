@@ -61,14 +61,17 @@ if ($USER->IsAuthorized()) {
                 <b><?= Loc::getMessage('ITEMS_LIST_TITLE') ?>:</b>
             </div>
             <? foreach ($arResult['ITEMS'] as $arItem) { ?>
+            <div class="oneitem">
                 <a href="<?= $arItem['DETAIL_PAGE_URL'] ?>" target="_blank">
                     <?= CYouWanna::multiTranslate($arItem['NAME'], $arParams['LANGUAGE_ID']) ?>
                 </a>
-                <span>
-                    - <?= $arItem['QUANTITY'] ?> <?= $arItem['MEASURE_NAME'] ?>
-                    = <?= (int)$arItem['PRICE'] * (int)$arItem['QUANTITY'] ?>
+                <span class="price_items">
+
+                    <?= (int)$arItem['PRICE'] * (int)$arItem['QUANTITY'] ?>
                     <span class="rub">&#8381;</span>
                 </span><br/>
+                <span class="kol-vo">Количество <?= $arItem['QUANTITY'] ?> <?= $arItem['MEASURE_NAME'] ?> </span>
+            </div>
             <? } ?>
             <div class="items-list-total">
                 <b><?= Loc::getMessage('SUM_ORDER') ?>:</b>
@@ -88,21 +91,21 @@ if ($USER->IsAuthorized()) {
             <label class="modif-label" for="">Имя <span class="spanred">*</span></label>
             <input type="text" name="FIO" class="required"
                    value="<?= $arInputValue['FIO'] ?: $_REQUEST['FIO'] ?>"
-                   placeholder="<?= Loc::getMessage('FIO') ?> " />
+                   placeholder="ВВЕДИТЕ ФИО ПОЛНОСТЬЮ" />
         </div>
 
         <div class="form-item">
             <label class="modif-label" for="">Телефон <span class="spanred">*</span></label>
             <input type="tel" name="PHONE" class="required js-phone-mask"
                    value="<?= $arInputValue['PHONE'] ?: $_REQUEST['PHONE'] ?>"
-                   placeholder="<?= Loc::getMessage('PHONE') ?> " />
+                   placeholder="ВВЕДИТЕ НОМЕР ТЕЛЕФОНА" />
         </div>
 
         <div class="form-item">
             <label class="modif-label" for="">Email <span class="spanred">*</span></label>
             <input type="text" name="EMAIL"  class="required"
                    value="<?= $arInputValue['EMAIL'] ?: $_REQUEST['EMAIL'] ?>"
-                   placeholder="<?= Loc::getMessage('EMAIL') ?> " />
+                   placeholder="ВВЕДИТЕ EMAIL АДРЕС" />
         </div>
 
         <div class="form-item">

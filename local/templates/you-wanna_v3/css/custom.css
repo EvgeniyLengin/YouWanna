@@ -616,10 +616,103 @@ span.elem._elem4.animate-wanna4 {
     font-size: 21px;
     margin-bottom: 7px;
 }
+
 .fast-basket-modal #basket-root .basket-property-value-select span {
     padding-right: 2px;
 }
 
+.popup-fast-ordering-form .modal-header {
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    border: unset;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.popup-fast-ordering-form .items-list-title {
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.popup-fast-ordering-form .items-list {
+    border: unset;
+    border-bottom: unset!important;
+}
+.popup-fast-ordering-form .oneitem {
+    padding-bottom: 14px;
+    padding-top: 14px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.popup-fast-ordering-form .items-list .oneitem:nth-last-child(2) {
+    border: unset!important;
+
+}
+.popup-fast-ordering-form .oneitem a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    color: #000000;
+    letter-spacing: 0.05em;
+
+}
+.popup-fast-ordering-form .price_items {
+    font-weight: 600;
+    margin-left: 10px;
+    font-size: 15px;
+}
+.popup-fast-ordering-form  .close {
+    opacity: 1;
+ }
+.popup-fast-ordering-form  .close:before {
+     color: black;
+ }
+
+.popup-fast-ordering-form .kol-vo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+}
+
+.popup-fast-ordering-form .items-list-total {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    margin-top: 15px;
+
+}
+.popup-fast-ordering-form .form-item .modif-label {
+    font-weight: 500;
+    color: black;
+}
+.popup-fast-ordering-form .form-item {
+    margin-bottom: 15px;
+}
+.popup-fast-ordering-form input.required {
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.2)!important;
+    margin-top: 6px;
+}
+
+.popup-fast-ordering-form .form-item .js-send-form {
+    justify-content: center;
+    display: flex;
+    max-width: 208px;
+    margin: 0 auto;
+    margin-top: 25px;
+
+}
 @media screen and (max-width: 1024px) {
     .yw-topmenusub-wrap .yw-topmenusub {
         display: flex;
